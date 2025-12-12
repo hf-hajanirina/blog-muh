@@ -1,5 +1,7 @@
 import { Phone } from "lucide-react";
 import MobileNav from "./components/MobileNav";
+import Gallery from "./components/Gallery";
+import HeroImage from "./components/HeroImage";
 
 export default function Home() {
   return (
@@ -60,11 +62,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-red-400 to-red-500 rounded-2xl shadow-2xl overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-white text-6xl font-bold">
-                  HHM
-                </div>
-              </div>
+              <HeroImage />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
                 <div className="text-4xl font-bold text-red-600">175cm</div>
                 <div className="text-gray-600">Taille</div>
@@ -450,19 +448,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-red-300">
-                  <div className="text-sm text-red-600 font-semibold mb-1">2012</div>
-                  <h4 className="font-bold text-gray-900">BEPC</h4>
-                  <p className="text-sm text-gray-600">Madagascar</p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-red-300">
-                  <div className="text-sm text-red-600 font-semibold mb-1">2008</div>
-                  <h4 className="font-bold text-gray-900">CEPE</h4>
-                  <p className="text-sm text-gray-600">Madagascar</p>
-                </div>
-              </div>
             </div>
 
             <div className="mt-8 bg-red-50 p-6 rounded-xl">
@@ -657,32 +642,7 @@ export default function Home() {
             <div className="w-20 h-1 bg-gradient-to-r from-red-600 to-red-600 mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="aspect-square bg-gradient-to-br from-red-400 to-red-500 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="w-full h-full flex items-center justify-center text-white">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">🏀</div>
-                  <div className="text-sm">En Action</div>
-                </div>
-              </div>
-            </div>
-            <div className="aspect-square bg-gradient-to-br from-red-400 to-red-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="w-full h-full flex items-center justify-center text-white">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">🏆</div>
-                  <div className="text-sm">Compétitions</div>
-                </div>
-              </div>
-            </div>
-            <div className="aspect-square bg-gradient-to-br from-red-500 to-red-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="w-full h-full flex items-center justify-center text-white">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">⭐</div>
-                  <div className="text-sm">Entraînement</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Gallery />
 
           <div className="mt-8 text-center">
             <p className="text-gray-600">
